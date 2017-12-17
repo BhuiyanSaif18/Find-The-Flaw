@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="811.1" maxWidth="1449.6" minHeight="811.1" minWidth="1449.6" prefHeight="811.1" prefWidth="1449.6" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Menu2Controller">
+   <children>
+      <HBox layoutX="178.0" layoutY="41.0" prefHeight="100.0" prefWidth="200.0" />
+      <ImageView fitHeight="811.1" fitWidth="1449.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lib/pics/sky_cloud1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="reset" layoutX="613.0" layoutY="52.0" mnemonicParsing="false" onAction="#Reset" prefHeight="77.0" prefWidth="213.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Study/2-2/Java%20lab/Find-The-Flaw/src/lib/pics/reset.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

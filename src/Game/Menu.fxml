@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuPane" maxHeight="811.1" maxWidth="1449.6" minHeight="811.1" minWidth="1449.6" prefHeight="811.1" prefWidth="1449.6" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.MenuController">
+   <children>
+      <HBox layoutX="196.0" layoutY="115.0" prefHeight="100.0" prefWidth="200.0" />
+      <ImageView fitHeight="811.1" fitWidth="1449.6" layoutX="0" layoutY="0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lib/pics/sky_cloud1.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="30.0" />
+         </effect>
+      </ImageView>
+      <Button fx:id="Menu" layoutX="422.0" layoutY="561.0" mnemonicParsing="false" onAction="#loadScene" prefHeight="85.0" prefWidth="234.0" text="Menu">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Study/2-2/Java%20lab/Find-The-Flaw/src/lib/pics/Menu_button.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Button fx:id="Exit" layoutX="820.0" layoutY="561.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="226.0" text="Exit">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Study/2-2/Java%20lab/Find-The-Flaw/src/lib/pics/Exit_button_f.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Label layoutX="512.0" layoutY="190.0" prefHeight="171.0" prefWidth="479.0" text="Find The Flaw" textAlignment="CENTER" textFill="#000103" textOverrun="CLIP">
+         <font>
+            <Font size="77.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
